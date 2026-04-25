@@ -21,24 +21,6 @@ MAE: 49.00 vs 58.78, R²: −0.28 vs −0.79).
 
 ---
 
-## Repository Structure
-├── data/
-│   └── dataset_description.md   # Description of image-AQI pairs
-├── models/
-│   ├── vgg16_hybrid.py          # VGG16 + PM2.5 hybrid model
-│   └── efficientnetb0_hybrid.py # EfficientNetB0 + PM2.5 hybrid model
-├── notebooks/
-│   └── training.ipynb           # Google Colab training notebook
-├── figures/
-│   ├── fig_methodology.png
-│   ├── fig_vgg_loss.png
-│   ├── fig_vgg_rmse.png
-│   ├── fig_scatter.png
-│   └── fig_errors.png
-└── README.md
-
----
-
 ## Dataset
 - **Total samples:** 1,014 image–AQI pairs
 - **Split:** 710 train / 151 validation / 153 test
@@ -64,11 +46,6 @@ MAE: 49.00 vs 58.78, R²: −0.28 vs −0.79).
 ---
 
 ## Results
-
-| Model | RMSE | MAE | R² |
-|-------|------|-----|----|
-| VGG16 + PM2.5 | 78.71 | 58.78 | −0.794 |
-| EfficientNetB0 + PM2.5 | 66.49 | 49.00 | −0.280 |
 
 EfficientNetB0 reduces RMSE by **15.5%** and MAE by **16.6%** compared to VGG16.
 
